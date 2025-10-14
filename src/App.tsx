@@ -1,18 +1,23 @@
-import Button from "./components/Button";
+// import Button from "./components/Button";
 // import { IoMdClose } from "react-icons/io";
 
+import Input from "./components/Input";
+
 function App() {
+  const array = ["a", "b", "c"];
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-start pt-20 h-screen">
       {/* <h1 className="text-red-500">Movies App</h1> */}
-      <Button
+      {/* <Button
         text="Button"
-        type="primary"
+        type="secondary"
         // height="h-[200px]"
         // width="w-[200px]"
         // icon={IoMdClose}
-        // positionIcon="right"
-      />
+        // positionIcon="left"
+      /> */}
+
+      <Input label="texto" type="select" width="w-[600px]" options={array} />
     </div>
   );
 }

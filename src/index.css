@@ -1,2 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@layer components {
+  .focus-clean,
+  .focus-clean:focus,
+  .focus-clean:focus-visible {
+    outline: none !important;
+    outline-offset: 0 !important;
+    box-shadow: none !important; /* por si tu tema agrega ring/shadow */
+  }
+}

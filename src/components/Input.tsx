@@ -33,7 +33,7 @@ const Input = (props: Props) => {
           <div className="relative ">
             <input
               type={showPassword ? "text" : "password"}
-              className={`border-[1px] rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
+              className={`border-[1px] input rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
               focus:ring-[1px] focus:ring-accent ${props.width} ${props.height}`}
             />
             {showPassword ? (
@@ -63,7 +63,7 @@ const Input = (props: Props) => {
           </label>
           <input
             type="date"
-            className={`border-[1px] rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
+            className={`border-[1px] input rounded border-accent focus-clean  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
               focus:ring-[1px] focus:ring-accent ${props.width} ${props.height}`}
           />
         </div>
@@ -81,7 +81,7 @@ const Input = (props: Props) => {
           </label>
           <input
             type="email"
-            className={`border-[1px] rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
+            className={`border-[1px] input rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
               focus:ring-[1px] focus:ring-accent ${props.width} ${props.height}`}
           />
         </div>
@@ -99,7 +99,7 @@ const Input = (props: Props) => {
           </label>
           <input
             type="number"
-            className={`border-[1px] rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
+            className={`border-[1px] input rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
               focus:ring-[1px] focus:ring-accent ${props.width} ${props.height}`}
           />
         </div>
@@ -116,7 +116,7 @@ const Input = (props: Props) => {
             {props.label}
           </label>
           <select
-            className={`select select-accent min-w-52 ${props.width} ${props.height}`}
+            className={`select select-accent min-w-52 focus-clean ${props.width} ${props.height}`}
           >
             {props.options?.map((option, i) => (
               <option key={i} value={option} selected>
@@ -137,7 +137,7 @@ const Input = (props: Props) => {
           </label>
           <input
             type="text"
-            className={`border-[1px] rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
+            className={`border-[1px] input rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
               focus:ring-[1px] focus:ring-accent ${props.width} ${props.height}`}
           />
         </div>
@@ -145,7 +145,7 @@ const Input = (props: Props) => {
       {props.type === "text" && !props.label && (
         <input
           type={props.type}
-          className={`border-[1px] rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
+          className={`border-[1px] input rounded border-accent  pl-2 py-1 min-w-52 focus:border-secring-accent focus:border-[1px] focus:outline-none
               focus:ring-[1px] focus:ring-accent ${props.width} ${props.height}`}
           placeholder={props.placeholder}
         />
